@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shantanu Bobade - Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="component/Allcss.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <style>
+    
+      .navbar {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #fff !important;
+        }
+        .nav-link {
+            color: #fff !important;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #ffd700 !important;
+            transform: translateY(-2px);
+        }
+        .navbar-toggler {
+            border-color: #fff;
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+       .footer {
+    backgroundnear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: black;
+    padding: 60px 0 30px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://source.unsplash.com/random/1920x1080?technology') no-repeat center center/cover;
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  .footer-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .footer p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .contact-info {
+    margin-top: 20px;
+  }
+
+  .contact-info p {
+    margin-bottom: 0.5rem;
+  }
+
+  .social-icons {
+    margin-top: 2rem;
+  }
+
+  .social-icons a {
+    color: green;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+
+  .btn-primary {
+    background-color: white;
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .footer {
+      padding: 40px 0 20px;
+    }
+  }
+    </style>
+</head>
+<body class="bg-gray-100">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Its me</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Projects</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="resume.html">View resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="resume-container p-8">
+        <div class="grid grid-cols-3 gap-6">
+            <!-- Left Column -->
+            <div class="col-span-1 bg-gray-50 p-6 rounded-lg">
+                <h1 class="text-2xl font-bold text-blue-600">Shantanu Bobade</h1>
+                <p class="text-gray-600 mt-2">Java Developer</p>
+
+                <div class="mt-6">
+                    <h2 class="text-lg font-semibold section-title">Contact</h2>
+                    <p class="mt-2">+91-7038477254</p>
+                    <p>shantanusanjaybobade <br>@gmail.com</p>
+                </div>
+
+                <div class="mt-6">
+                    <h2 class="text-lg font-semibold section-title">Links</h2>
+                    <p class="mt-2"><a href="https://www.linkedin.com/in/shantanu-bobade-657a72246/" class="text-blue-500 hover:underline">LinkedIn Profile</a></p>
+                </div>
+
+                <div class="mt-6">
+                    <h2 class="text-lg font-semibold section-title">Skills</h2>
+                    <div class="mt-2 flex flex-wrap">
+                        <span class="skill-tag">JAVA</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">JDBC</span>
+                        <span class="skill-tag">JSP</span>
+                        <span class="skill-tag">Servlet</span>
+                        <span class="skill-tag">Software Testing</span>
+                        <span class="skill-tag">OOPs</span>
+                        <span class="skill-tag">DBMS</span>
+                        <span class="skill-tag">Test Cases</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">GUI</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <h2 class="text-lg font-semibold section-title">Soft Skills</h2>
+                    <ul class="mt-2 list-disc list-inside">
+                        <li>Adaptable</li>
+                        <li>Documentation</li>
+                        <li>Strategic Communication</li>
+                        <li>Leadership</li>
+                    </ul>
+                </div>
+
+                <div class="mt-6">
+                    <h2 class="text-lg font-semibold section-title">Languages</h2>
+                    <ul class="mt-2 list-disc list-inside">
+                        <li>English</li>
+                        <li>Hindi</li>
+                        <li>Marathi</li>
+                    </ul>
+                </div>
+
+                <div class="mt-6">
+                    <h2 class="text-lg font-semibold section-title">Hobbies</h2>
+                    <p class="mt-2">Travelling</p>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-span-2 p-6">
+                <div class="mb-8">
+                    <h2 class="text-xl font-bold section-title">Profile</h2>
+                    <p class="mt-2 text-gray-700">
+                        Java Developer with strong expertise in Java, SQL, and web technologies, specializing in building robust and scalable solutions. Proven experience in software development, testing, and delivering high-quality results.
+                    </p>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-xl font-bold section-title">Experience</h2>
+                    <div class="mt-4">
+                        <h3 class="font-semibold text-blue-600">Software Tester Intern - Tristha Globals, Mumbai</h3>
+                        <p class="text-sm text-gray-600 italic">Feb 2024 - April 2024</p>
+                        <ul class="mt-2 list-disc list-inside text-gray-700">
+                            <li>Led a project to test an employee database software, ensuring optimal functionality and performance.</li>
+                            <li>Conducted comprehensive quality assurance testing to identify and resolve software defects.</li>
+                            <li>Developed and executed detailed test plans, test cases, and test scripts.</li>
+                            <li>Documented testing processes and results to provide accurate and comprehensive feedback.</li>
+                            <li>Utilized various testing tools and methodologies to improve software reliability and efficiency.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="font-semibold text-blue-600">Web Developer Intern - InternPe Raipur, Rajasthan</h3>
+                        <p class="text-sm text-gray-600 italic">July 2023 - August 2023</p>
+                        <ul class="mt-2 list-disc list-inside text-gray-700">
+                            <li>Designed and developed an e-commerce website using HTML, CSS, and JavaScript.</li>
+                            <li>Optimized web performance and ensured cross-browser compatibility.</li>
+                            <li>Learned the basics of JavaScript to enhance interactive elements of the website.</li>
+                            <li>Collaborated with cross-functional teams to optimize website functionality and design.</li>
+                            <li>Implemented a user-friendly UI to improve site navigation and user interaction.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-xl font-bold section-title">Projects</h2>
+                    <div class="mt-4">
+                        <h3 class="font-semibold text-blue-600">Interac Bot</h3>
+                        <ul class="mt-2 list-disc list-inside text-gray-700">
+                            <li>Developed "InteracBot," a Java-based interactive chatbot utilizing multithreading and socket programming.</li>
+                            <li>Implemented concurrent programming techniques to optimize performance and enable real-time interaction.</li>
+                            <li>Designed and integrated a user-friendly graphical user interface (GUI) using Java Swing.</li>
+                            <li>Demonstrated proficiency in network communication protocols and data exchange.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="font-semibold text-blue-600">Sonar Rock Vs Mine Prediction System</h3>
+                        <ul class="mt-2 list-disc list-inside text-gray-700">
+                            <li>Collaborated with a team to preprocess data, select features, and optimize model performance.</li>
+                            <li>Developed a predictive model using Python to distinguish between rocks and mines based on sonar data.</li>
+                            <li>Demonstrated strong communication skills in translating technical details into accessible documentation.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-xl font-bold section-title">Certifications</h2>
+                    <ul class="mt-2 list-disc list-inside text-gray-700">
+                        <li>National Robotics Championship (Conducted by IIT Mumbai)</li>
+                        <li>Coding Ninjas (Java)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  <footer class="footer">
+  <div class="container footer-content">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>About Me</h5>
+        <p>As a versatile Java and Web Developer, I excel at designing scalable solutions and driving innovation through code. My passion for technology and problem-solving fuels my dedication to creating impactful and efficient applications.</p>
+      </div>
+      <div class="col-md-6">
+        <h5>Contact Information</h5>
+        <div class="contact-info">
+          <p><i class="fas fa-phone"></i> +91 7038477254</p>
+          <p><i class="fas fa-envelope"></i> Shantanusanjaybobade@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Electronic City, Bangalore</p>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-4 mb-4" style="border-color: rgba(255,255,255,0.2);">
+    <div class="text-center">
+      <h4>Get In Touch</h4>
+      
+      <div class="social-icons">
+        <a href="https://www.instagram.com/shantanu__2611_/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/shantanu.bobde.7/"><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com/Shantanubobade"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shantanu-bobade-657a72246/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"><i class="far fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  
+</body>
+</html>

@@ -1,0 +1,115 @@
+
+<style>
+  .footer {
+    backgroundnear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: black;
+    padding: 60px 0 30px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://source.unsplash.com/random/1920x1080?technology') no-repeat center center/cover;
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  .footer-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .footer p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .contact-info {
+    margin-top: 20px;
+  }
+
+  .contact-info p {
+    margin-bottom: 0.5rem;
+  }
+
+  .social-icons {
+    margin-top: 2rem;
+  }
+
+  .social-icons a {
+    color: green;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+
+  .btn-primary {
+    background-color: white;
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .footer {
+      padding: 40px 0 20px;
+    }
+  }
+</style>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>About Me</h5>
+        <p>As a versatile Java and Web Developer, I excel at designing scalable solutions and driving innovation through code. My passion for technology and problem-solving fuels my dedication to creating impactful and efficient applications.</p>
+      </div>
+      <div class="col-md-6">
+        <h5>Contact Information</h5>
+        <div class="contact-info">
+          <p><i class="fas fa-phone"></i> +91 7038477254</p>
+          <p><i class="fas fa-envelope"></i> Shantanusanjaybobade@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Electronic City, Bangalore</p>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-4 mb-4" style="border-color: rgba(255,255,255,0.2);">
+    <div class="text-center">
+      <h4>Get In Touch</h4>
+      
+      <div class="social-icons">
+        <a href="https://www.instagram.com/shantanu__2611_/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/shantanu.bobde.7/"><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com/Shantanubobade"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shantanu-bobade-657a72246/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"><i class="far fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>

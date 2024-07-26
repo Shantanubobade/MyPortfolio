@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <title>Shantanu's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="Allcss.css">
+  <style>
+    @keyframes rubberBand {
+      from { transform: scale3d(1, 1, 1); }
+      30% { transform: scale3d(1.25, 0.75, 1); }
+      40% { transform: scale3d(0.75, 1.25, 1); }
+      50% { transform: scale3d(1.15, 0.85, 1); }
+      65% { transform: scale3d(0.95, 1.05, 1); }
+      75% { transform: scale3d(1.05, 0.95, 1); }
+      to { transform: scale3d(1, 1, 1); }
+    }
+    a{
+    text-decoration: none;
+    }
+
+    .pulse {
+      animation: pulse 1s;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    
+      .navbar {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            box-shadow: 0 2px 4px rgba(0,0,0,.1);
+        }
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: #fff !important;
+        }
+        .nav-link {
+            color: #fff !important;
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #ffd700 !important;
+            transform: translateY(-2px);
+        }
+        .navbar-toggler {
+            border-color: #fff;
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  
+  }
+  
+   .footer {
+    backgroundnear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: black;
+    padding: 60px 0 30px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://source.unsplash.com/random/1920x1080?technology') no-repeat center center/cover;
+    opacity: 0.1;
+    z-index: 0;
+  }
+
+  .footer-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .footer h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .footer p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .contact-info {
+    margin-top: 20px;
+  }
+
+  .contact-info p {
+    margin-bottom: 0.5rem;
+  }
+
+  .social-icons {
+    margin-top: 2rem;
+  }
+
+  .social-icons a {
+    color: green;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+
+  .btn-primary {
+    background-color: white;
+    color: var(--primary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--secondary-color);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .footer {
+      padding: 40px 0 20px;
+    }
+  }
+  </style>
+</head>
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Its me</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">View resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+<form action="portfolio" method="post">
+<input type="text" hidden="" name="sql">
+  <section class="hero">
+    <div class="hero-content">
+      <img src="t.png" alt="Shantanu" class="profile-img" id="profile-img">
+      <h1 id="greeting">Hi, I'm Shantanu</h1>
+      <div class="typewriter" id="typewriter"></div>
+      <p class="mt-4">Designing scalable solutions and driving innovation through code.</p>
+      <div class="leet">
+        <p class="mt-4" style="color: black; ">Coding Profiles</p>
+       
+       
+         <a class="nav-link" href="https://www.naukri.com/code360/profile/shantanu_bobade" target="_blank">Coding Ninjas</a>
+                  <a class="nav-link" href="https://www.hackerrank.com/domains/java?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=java" target="_blank">Hacket Rank</a>
+         
+      </div>
+      <div class="social-icons">
+        <a href="https://github.com/Shantanubobade" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shantanu-bobade-657a72246/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+   <div class="btn">
+  <a href="resume.html" style="text-decoration: none; color: black;">
+   
+      View Resume
+    </button>
+  </a>
+</div>
+    </div>
+    <div class="scroll-down">
+      <i class="fas fa-chevron-down fa-2x"></i>
+    </div>
+  </section>
+  
+  
+
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>About Me</h5>
+        <p>As a versatile Java and Web Developer, I excel at designing scalable solutions and driving innovation through code. My passion for technology and problem-solving fuels my dedication to creating impactful and efficient applications.</p>
+      </div>
+      <div class="col-md-6">
+        <h5>Contact Information</h5>
+        <div class="contact-info">
+          <p><i class="fas fa-phone"></i> +91 7038477254</p>
+          <p><i class="fas fa-envelope"></i> Shantanusanjaybobade@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Electronic City, Bangalore</p>
+        </div>
+      </div>
+    </div>
+    <hr class="mt-4 mb-4" style="border-color: rgba(255,255,255,0.2);">
+    <div class="text-center">
+      <h4>Get In Touch</h4>
+      
+      <div class="social-icons">
+        <a href="https://www.instagram.com/shantanu__2611_/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/shantanu.bobde.7/"><i class="fab fa-facebook"></i></a>
+        <a href="https://github.com/Shantanubobade"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shantanu-bobade-657a72246/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"><i class="far fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Typewriter effect
+      const typewriter = document.getElementById('typewriter');
+      const texts = ['Java Developer', 'Web Developer', 'Problem Solver'];
+      let textIndex = 0;
+      let charIndex = 0;
+
+      function type() {
+        if (charIndex < texts[textIndex].length) {
+          typewriter.textContent += texts[textIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(type, 100);
+        } else {
+          setTimeout(erase, 2000);
+        }
+      }
+
+      function erase() {
+        if (charIndex > 0) {
+          typewriter.textContent = texts[textIndex].substring(0, charIndex - 1);
+          charIndex--;
+          setTimeout(erase, 50);
+        } else {
+          textIndex = (textIndex + 1) % texts.length;
+          setTimeout(type, 500);
+        }
+      }
+
+      type();
+
+      
+      const profileImg = document.getElementById('profile-img');
+      profileImg.addEventListener('mousemove', (e) => {
+        const { left, top, width, height } = profileImg.getBoundingClientRect();
+        const x = (e.clientX - left) / width - 0.5;
+        const y = (e.clientY - top) / height - 0.5;
+        profileImg.style.transform = `perspective(1000px) rotateY(${x * 10}deg) rotateX(${-y * 10}deg) scale3d(1.1, 1.1, 1.1)`;
+      });
+
+      profileImg.addEventListener('mouseleave', () => {
+        profileImg.style.transform = 'perspective(1000px) rotateY(0) rotateX(0) scale3d(1, 1, 1)';
+      });
+
+      // Greeting animation
+      const greeting = document.getElementById('greeting');
+      greeting.addEventListener('mouseenter', () => {
+        greeting.style.animation = 'rubberBand 1s';
+      });
+
+      greeting.addEventListener('animationend', () => {
+        greeting.style.animation = '';
+      });
+
+      // Resume button pulse effect
+      const resumeBtn = document.getElementById('resume-btn');
+      setInterval(() => {
+        resumeBtn.classList.add('pulse');
+        setTimeout(() => {
+          resumeBtn.classList.remove('pulse');
+        }, 1000);
+      }, 3000);
+    });
+  </script>
+  </form>
+</body>
+</html>
